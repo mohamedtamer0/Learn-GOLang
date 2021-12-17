@@ -50,5 +50,43 @@ func main() {
 
 	fmt.Println("====================")
 	//Complex
+	var c complex64 = 1 + 2i
+	fmt.Printf("%v, %T \n", c, c)
+	fmt.Printf("%v, %T \n", real(c), real(c))
+	fmt.Printf("%v, %T \n", imag(c), imag(c))
+
+	var c2 complex128 = complex(5, 12)
+	fmt.Printf("%v, %T \n", c2, c2)
+
+	fmt.Println("====================")
+	//Text types
+	str := "this is a String"
+	fmt.Printf("%v, %T \n", str, str)
+	fmt.Printf("%v, %T \n", string(str[2]), str[2])
+	str2 := []byte(str)
+	fmt.Printf("%v, %T \n", str2, str2)
 
 }
+
+/*
+Summary :
+Boolean type ->
+Values are true or false
+Not an alias for other types =
+zero value is false
+---------------------------
+Integers ->
+signed int :
+	int type has varying size, but min 32 bits
+	8 bit (int8) ...64 bit
+Unsigned int :
+	8 bit (byte and uint8) ..32(unit32)
+Arth ->
++
+-
+*
+/
+%
+operators :
+And , or , xor, not
+*/
