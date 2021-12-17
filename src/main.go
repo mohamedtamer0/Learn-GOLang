@@ -11,6 +11,9 @@ Visibility :
 lower case first letter for package scope
 upper case first letter to export
 no private scope
+Type Conversions:
+destinationType (Variable)
+use strconv package for String
 */
 
 import (
