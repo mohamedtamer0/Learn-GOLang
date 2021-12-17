@@ -13,4 +13,7 @@ func main() {
 	fmt.Println(i)
 	fmt.Println(x)
 	fmt.Println(y)
+
+	var j int = 25
+	fmt.Printf("%v, %T", j, j)
 }
