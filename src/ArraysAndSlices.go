@@ -15,4 +15,7 @@ Working with slices
 func main() {
 	grades := [3]int{97, 85, 93}
 	fmt.Printf("Grades: %v", grades)
+
+	fmt.Println("=================")
+
 }
