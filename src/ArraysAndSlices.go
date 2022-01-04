@@ -58,4 +58,17 @@ func main() {
 	fmt.Println(d)
 	fmt.Println(e)
 
+	fmt.Println("=================")
+
+	x := make([]int, 3)
+	fmt.Println(x)
+	fmt.Printf("Length : %v \n", len(x))
+	fmt.Printf("Capacity : %v \n", cap(x))
+
+	fmt.Println("=================")
+
+	t := []int{1, 2, 3, 4, 5}
+	//r := t[:len(t)-1]
+	r := append(t[:2], t[3:]...)
+	fmt.Println(r)
 }
